@@ -35,7 +35,7 @@ function addHistories(historyItem) {
         const li = $('<li>');
         const anchor = $('<a>');
         anchor.attr('href', url);
-        if (historyItem.title || historyItem.title === '') {
+        if (!historyItem.title || historyItem.title === '') {
             anchor.text(url);
         } else {
             anchor.text(historyItem.title);
