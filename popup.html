@@ -1,0 +1,32 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="bookmarks.js"></script>
+    <script src="history.js"></script>
+    <style>
+        * {
+            font-size: 14px;
+            line-height: 1.5em;
+        }
+        body {
+            width: 400px;
+            padding: 5px;
+        }
+        input {
+            width: 200px;
+            height: 2em;
+            padding: 2px;
+            background: url("search.png") no-repeat right;
+        }
+    </style>
+</head>
+<body>
+<div><label for="search">Search:&emsp;</label><input id="search" autofocus="autofocus"></div>
+<div id="records">
+    <label for="bookmarks" id="label_marks"></label>
+    <ul id="bookmarks"></ul>
+    <label for="history" id="label_history"></label>
+    <ul id="history"></ul>
+</div>
+</body>
+</html>
